@@ -8,7 +8,8 @@
 - CrossCulturalLink: Linking cultures, forging connections
 - MigrantMingle: A digital gathering place where first-generation immigrant students can mingle
 
-### Pages Checklist
+## PRIORITY - 1 
+## Pages Checklist
 - [ ] Landing Page- Sign up/ Login
 - [ ] Form page for a new user
 - [ ] Their Dashboard 
@@ -16,6 +17,7 @@
 - [ ] The page where the story is displayed
 
 
+## PRIORITY - n
 ### Additional Feautres-
 - [ ] Finalising the design and template
 - [ ] Building Home Page for our website 
