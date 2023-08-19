@@ -6,13 +6,15 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        purple: '#512EB7',
-        lavendar: '#A68BFF',
-        yellow: '#FFC700',
-        white: '#FFFFFF',
-        grey: '#F2F2F2',
+        primary: '#512EB7', // rich purple
+        secondary: '#A68BFF', // lavendar
+        accent: '#FFC700', // yellow
+        white: '#FFFFFF', // text
+        grey: '#F2F2F2', // background
       },
     },
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/forms'),
+  ],
 }
