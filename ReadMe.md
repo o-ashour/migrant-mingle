@@ -18,6 +18,9 @@ STILL OPEN
 ## Pages Checklist
 - [x] Finalising the design and template
    + View StyleGuide.md to know more
+      - [x] color palette added
+      - [x] font family added
+      - [ ] logo designs
 - [ ] Landing Page- Sign up/ Login
 - [ ] Form page for a new user
 - [ ] Their Dashboard 
