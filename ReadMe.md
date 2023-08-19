@@ -6,7 +6,15 @@
 - FusionFellowship: Fusing cultures, fostering fellowship.
 - UnityMingle: Mingle in unity, bond in diversity.
 - CrossCulturalLink: Linking cultures, forging connections
-- MigrantMingle: A digital gathering place where first-generation immigrant students can mingle 
+- MigrantMingle: A digital gathering place where first-generation immigrant students can mingle
+
+### Pages 
+- [ ] Landing Page- Sign up/ Login
+- [ ] Form page for a new user
+- [ ] Their Dashboard 
+- [ ] Create a Story Page 
+- [ ] The page where the story is displayed
+
 
 ### Checklist-
 - [ ] Finalising the design and template
