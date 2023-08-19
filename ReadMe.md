@@ -9,17 +9,17 @@
 - MigrantMingle: A digital gathering place where first-generation immigrant students can mingle 
 
 ### Checklist-
-- [] Finalising the design and template
-- [] Building Home Page for our website 
-- [] Profile building page
-- [] Stories sharing Page
-- [] Recipe of the Day Page
+- [ ] Finalising the design and template
+- [ ] Building Home Page for our website 
+- [ ] Profile building page
+- [ ] Stories sharing Page
+- [ ] Recipe of the Day Page
 
 ##### Additional Features
-- [] Search Feature 
-- [] Chat Feature 
-- [] Location share and Map feature 
-- [] Login Sign up Page (Oauth)
+- [ ] Search Feature 
+- [ ] Chat Feature 
+- [ ] Location share and Map feature 
+- [ ] Login Sign up Page (Oauth)
 
 ### Team 
 - [Vaishali](https://www.github.com/arcVaishali)
