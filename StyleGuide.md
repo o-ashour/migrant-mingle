@@ -26,7 +26,7 @@
 
 --------------------------------------------------------------------------------------------------------------
 
-# COLOR PALLETE
+# COLOR PALETTE
 
 ### Purple
 
@@ -44,7 +44,51 @@ Purple is sometimes associated with inclusivity and diversity due to its combina
 
 
 *For your reference*
-![Color Pallete](assets\colorPallete.jpg) 
+![Color Pallete](assets\colorPallete.jpg)  
+
+## Primary Color - 
+- Hex: #512EB7
+- Description: Rich Purple 
+
+## Secondary Color:
+<!-- 
+
+Since purple is a dominant color, a lighter shade of purple or a neutral color can work well as a secondary color. Let's go with a lighter shade of purple: 
+
+-->
+
+- Hex: #A68BFF
+- Description: Soft Lavender
+
+## Accent Color:
+<!--
+
+ To create contrast and draw attention, a bright and complementary color can be used as an accent. Let's choose a bright yellow:
+
+ -->
+
+- Hex: #FFC700
+- Description: Vibrant Yellow
+
+## Text Color:
+<!-- 
+
+For readability against the primary color, a light color like white or a light gray can work well: 
+
+-->
+
+- Hex: #FFFFFF (White)
+- Description: White Text
+
+## Background Color:
+<!-- 
+
+The background color should harmonize with the primary color. A neutral or slightly lighter shade can provide a good contrast with the text: 
+
+-->
+
+- Hex: #F2F2F2 (Light Gray)
+- Description: Light Gray Background
 
 --------------------------------------------------------------------------------------------------------------
 
