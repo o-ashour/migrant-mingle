@@ -7,7 +7,7 @@ export default function SignUp() {
     <main>
       <div className="min-h-screen p-6 bg-gray-100 flex items-center justify-center mt-10">
         <div className="container max-w-screen-lg mx-auto">
-          <div>
+          <div style={{ marginTop: "50px" , textAlign:"center"}}>
             <h2 className="font-semibold text-xl text-gray-600">
               Registration Form
             </h2>
