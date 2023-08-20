@@ -1,63 +1,71 @@
-import Link from "next/link"
+import Link from "next/link";
 
 export default function CreateStory() {
   return (
-    <form>
-      <div class="space-y-12">
-        <div class="border-b border-gray-900/10 pb-12">
-          <h2 class="text-base font-semibold leading-7 text-gray-900">
-            Create a Story
-          </h2>
-            <div className="sm:col-span-3">
-              <label htmlFor="title" className="block text-sm font-medium leading-6 text-gray-900">
-                Title
-              </label>
-              <div className="mt-2">
-                <input
-                  type="text"
-                  name="title"
-                  id="title"
-                  autoComplete="given-name"
-                  className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
-                />
+    <div className="min-h-screen p-6 bg-gray-100 flex items-center justify-center">
+      <div className="container max-w-screen-lg mx-auto">
+        <div>
+          <div className="bg-white rounded shadow-lg p-4 px-4 md:p-8 mb-6">
+            <div className="grid gap-4 gap-y-2 text-sm grid-cols-1 lg:grid-cols-3">
+              <div className="text-gray-600">
+                <h1 className="font-semibold text-xl text-gray-600">
+                  Create a Post
+                </h1>
+                <p className="text-gray-500 mb-6 font-medium">
+                  Elevating Ideas: Sharing Inspiration, One Post at a Time.
+                </p>
               </div>
-            </div>
-
-            <div className="sm:col-span-3">
-              <label htmlFor="subtitle" className="block text-sm font-medium leading-6 text-gray-900">
-                Subtitle
-              </label>
-              <div className="mt-2">
-                <input
-                  type="text"
-                  name="subtitle"
-                  id="subtitle"
-                  autoComplete="family-name"
-                  className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
-                />
+              <div className="lg:col-span-2">
+                <div className="grid gap-4 gap-y-2 text-sm grid-cols-1 md:grid-cols-5">
+                  <div className="md:col-span-5">
+                    <label htmlFor="title">Title</label>
+                    <input
+                      type="text"
+                      name="title"
+                      id="title"
+                      className="h-10 border mt-1 rounded px-4 w-full bg-gray-50"
+                      autoComplete="given-name"
+                    />
+                  </div>
+                  <div className="md:col-span-5">
+                    <label htmlFor="subtitle">Subtitle</label>
+                    <input
+                      type="text"
+                      name="subtitle"
+                      id="subtitle"
+                      autoComplete="family-name"
+                      className="h-10 border mt-1 rounded px-4 w-full bg-gray-50"
+                    />
+                  </div>
+                  <div className="md:col-span-5">
+                    <label htmlFor="story">Story</label>
+                    <textarea
+                      id="story"
+                      name="story"
+                      rows="6"
+                      className="border mt-1 rounded px-4 w-full bg-gray-50"
+                    ></textarea>
+                  </div>
+                  <div className="md:col-span-5 text-right">
+                    <div className="inline-flex items-end">
+                      <Link href="/dashboard">
+                        <button
+                          type="button"
+                          className="bg-primary text-white font-bold py-2 px-4 rounded"
+                          data-te-ripple-init
+                          data-te-ripple-color="light"
+                        >
+                          Post
+                        </button>
+                      </Link>
+                    </div>
+                  </div>
+                </div>
               </div>
-            </div>
-
-          <div class="col-span-full">
-            <label htmlfor="story" class="block text-sm font-medium leading-6 text-gray-900">
-              Story
-            </label>
-            <div class="mt-2">
-              <textarea id="story" name="story" rows="3" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"></textarea>
             </div>
           </div>
         </div>
-        <Link href="/dashboard">
-          <button
-            type="button"
-            className="inline-block rounded bg-primary px-7 pb-2.5 pt-3 text-base font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-primary-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] dark:shadow-[0_4px_9px_-4px_rgba(59,113,202,0.5)] dark:hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)]"
-            data-te-ripple-init
-            data-te-ripple-color="light"
-          >
-            Post Story
-          </button>
-        </Link>
       </div>
-    </form>
-  )
+    </div>
+  );
 }
