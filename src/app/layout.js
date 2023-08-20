@@ -1,7 +1,7 @@
 import './globals.css'
-import { Buenard } from 'next/font/google'
+import { Quicksand } from 'next/font/google'
 
-export const text = Buenard({
+export const text = Quicksand({
   subsets: ['latin'],
   weight: ['400', '700'],
 });
