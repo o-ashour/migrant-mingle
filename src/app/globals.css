@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background-hex: #F2F2F2; /* light gray */
+  --text-hex: #FFFFFF; /* white */
+  --primary-hex-1: #512EB7; /* rich purple */
+  --primary-hex-2: #D2C6F7;
+  --primary-hex-3: #9775FA;
+  --primary-hex-4: #693FE3;
+  --primary-hex-5: #452F86;
+  --primary-hex-6: #3A2C63;
+  --primary-hex-7: #30274A;
+  --primary-hex-8: #272237;
+  --secondary-hex: #A68BFF; /* soft lavendar */
+  --accent-hex: #FFC700; /* vibrant yellow */
+}
+
+body {
+  color: rgb(var(--primary-hex-1));
+  background: var(--background-hex);
+}
