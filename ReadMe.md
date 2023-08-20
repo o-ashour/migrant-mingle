@@ -20,7 +20,8 @@ STILL OPEN
    + View StyleGuide.md to know more
       - [x] color palette added
       - [x] font family added
-      - [ ] logo designs
+      - [x] images added
+      - [x] logo designs (cropped or smaller logo added)
 - [ ] Landing Page- Sign up/ Login
 - [ ] Form page for a new user
 - [ ] Their Dashboard 

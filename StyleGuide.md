@@ -1,28 +1,60 @@
-# LOGO DESIGN 1 
-1. Marilyn Monroe Dark
+# Table of contents 
+- [Logo Design 1](#logo-design-1)
+  + [Coconot Dark](#coconot-dark)
+    - [smaller dimensions added](assets\LogoDesign1) 
+  + [Coconot Light](#coconot-light)
+    - [smaller dimensions added](assets\LogoDesign1) 
+- [Logo Design 2](#logo-design-2)
+  + [Marilyn Monroe Dark](#marilyn-monroe-dark)
+  + [Marilyn Monroe Light](#marilyn-monroe-light) 
+- [Color Palette](#color-palette) 
+  + [Purple Primary Color](#purple)
+  + [Primary Color](#primary-color)
+  + [Secondary Color](#secondary-color)
+  + [Accent Color](#accent-color)
+  + [Text Color](#text-color)
+  + [Background Color](#background-color) 
+- [Font Family](#typography)
+- [Images](#images)
+
+    
+# LOGO DESIGN 1
+> Probably for website
+### Coconot Dark
+
+*Preview*
+
+![CCDark](assets\LogoDesign1\coconotDark.png) 
+
+*Other dimensions also available, check- assets\LogoDesign1*
+
+### Coconot Light
+
+*Preview*
+
+![CCDark](assets\LogoDesign1\coconotLight.png)
+
+*Other dimensions also available, check- assets\LogoDesign1*
+
+# LOGO DESIGN 2 
+> Probably for Devpost Submission
+### Marilyn Monroe Dark
 
 *Preview*
 
 ![MMDark](assets\LogoDesign2\marilynMonroeDark.png)
 
-2. Marilyn Monroe Light
+### Marilyn Monroe Light
 
 *Preview*
 
 ![MMLight](assets\LogoDesign2\marilynMonroeLight.png)
 
-# LOGO DESIGN 2 
-1. Coconot Dark
 
-*Preview*
+## Logo for the Navbar 
+- Migrant - [League Spartan Font](https://fonts.google.com/share?selection.family=League%2BSpartan:wght@900)
+- Mingle - [Quicksand Font](https://fonts.google.com/share?selection.family=Quicksand)
 
-![CCDark](assets\LogoDesign1\coconotDark.png)
-
-2. Coconot Light
-
-*Preview*
-
-![CCDark](assets\LogoDesign1\coconotLight.png)
 
 --------------------------------------------------------------------------------------------------------------
 
@@ -32,7 +64,7 @@
 
 Purple is sometimes associated with inclusivity and diversity due to its combination of the warm color red and the cool color blue, representing the coming together of different elements.
 
-*Listed in ascending order of saturation*
+*Listed in descending order of saturation*
 1. "#D2C6F7"
 2. "#9775FA"
 3. "#693FE3"
