@@ -125,79 +125,39 @@ export default function Home() {
               <div className="shrink-1 mb-12 grow-0 basis-auto md:mb-0 md:w-9/12 md:shrink-0 lg:w-6/12 xl:w-6/12">
 
                 <div className="group relative" style={{ marginLeft: "-267px", width: "193%" }}>
-                  <div className="relative h-80 w-full overflow-hidden rounded-lg bg-white sm:aspect-h-1 sm:aspect-w-2 lg:aspect-h-1 lg:aspect-w-1 sm:h-80">
+
+                  <img src="https://images.unsplash.com/photo-1522543558187-768b6df7c25c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80" alt="" className="absolute inset-0 -z-10 h-full w-full object-cover object-right md:object-center" />
+                  {/* <div className="relative h-80 w-full overflow-hidden rounded-lg bg-white sm:aspect-h-1 sm:aspect-w-2 lg:aspect-h-1 lg:aspect-w-1 sm:h-80">
+
 
                     <img src="https://images.unsplash.com/photo-1522543558187-768b6df7c25c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80" alt="Community Bonding Image" className="h-full w-full object-cover object-center" />
 
-                  </div>
+                    https://www.bestofforever.com/wp-content/uploads/Quotes-About-Bonding-Moments-With-Friends-Twitter-1.jpg
+
+                  </div> */}
 
                   <div className="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]" aria-hidden="true">
                     <div className="relative right-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#9775FA] to-[#693FE3] opacity-30 sm:right-[calc(50%-30rem)] sm:w-[72.1875rem]" ></div>
                   </div>
 
-                  <div id="LOGIN" className="flex min-h-full flex-col justify-center px-6 py-12 lg:px-8">
-                    <div className="sm:mx-auto sm:w-full sm:max-w-sm">
+                  <div className="flex min-h-full flex-col justify-center px-20 py-40 lg:px-8" style={{ textAlign: "center", color: "white" }}>
 
-                      <a href="#" className="-m-1.5 p-1.5">
-                        <h1 className="text-5xl font-bold tracking-tight text-gray-900" style={{ textAlign: "center" }}>migrant.</h1>
-                        <p className="text-2xltracking-tight text-gray-500" style={{ textAlign: "center", marginLeft: "65px", marginTop: "-11px", marginBottom: "-2px" }}>MINGLE</p>
-                      </a>
-                      <h2 className="mt-10 text-center text-2xl font-bold leading-9 tracking-tight text-gray-900" style={{ lineHeight: "0.01" }}>Sign in to your account</h2>
+                    <div className="flex min-h-full flex-col justify-center px-20 py-40 lg:px-8" style={{
+                      textAlign: "center", backgroundColor: "#9775fa70",
+                      boxShadow: "0px 0px 7px 0px #FFC700",
+                      borderRadius: "10px"
+                    }}>
+
+                      <h1 className="text-7xl font-bold tracking-tight text-gray-900 sm:text-6xl" style={{ textAlign: "center", color: "white" }}>"A journey well shared is the journey well enjoyed!"
+                      </h1>
+
                     </div>
-                    
+
+
                     <div className="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]" aria-hidden="true">
                       <div className="relative right-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#9775FA] to-[#693FE3] opacity-30 sm:right-[calc(50%-30rem)] sm:w-[72.1875rem]" ></div>
                     </div>
 
-                    <div className="mt-10 sm:mx-auto sm:w-full sm:max-w-sm">
-                      <form className="space-y-6" action="#" method="POST">
-                        <div>
-                          <label htmlFor="exampleFormControlInput2" className="block text-sm font-medium leading-6 text-gray-900">Email address</label>
-                          <div className="mt-2">
-                            <input id="email" name="email" type="email" autocomplete="email" required className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" />
-                          </div>
-                        </div>
-
-                        <div>
-                          <div className="flex items-center justify-between">
-                            <label htmlFor="exampleFormControlInput22" className="block text-sm font-medium leading-6 text-gray-900">Password</label>
-                            <div className="text-sm">
-                              <a href="#" className="font-semibold text-indigo-600 hover:text-indigo-500">Forgot password?</a>
-                            </div>
-                          </div>
-                          <div className="mt-2">
-                            <input id="password" name="password" type="password" autocomplete="current-password" required className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" />
-                          </div>
-                        </div>
-
-                        <div>
-                          <div className="text-center lg:text-center">
-                            <Link href="/dashboard">
-                              <button
-                                type="button"
-                                className="inline-block rounded bg-primary px-7 pb-2.5 pt-3 text-base font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-primary-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] dark:shadow-[0_4px_9px_-4px_rgba(59,113,202,0.5)] dark:hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)]"
-                                data-te-ripple-init
-                                data-te-ripple-color="light"
-                                style={{ width: "100%", marginTop: "15px" }}
-                              >
-                                Login
-                              </button>
-                            </Link>
-                          </div>
-
-                        </div>
-                      </form>
-
-                      <p className="mt-10 text-center text-sm text-gray-500">
-                        Not a member?
-                        <Link
-                          href="/signup"
-                          className="text-[#512EB7] ml-2 transition duration-150 ease-in-out hover:text-danger-600 focus:text-danger-600 active:text-danger-700"
-                        >
-                          Register
-                        </Link>
-                      </p>
-                    </div>
                   </div>
 
                   <div className="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]" aria-hidden="true">
@@ -205,6 +165,71 @@ export default function Home() {
                   </div>
 
 
+                </div>
+
+                <div id="LOGIN" className="flex min-h-full flex-col justify-center px-6 py-12 lg:px-8">
+                  <div className="sm:mx-auto sm:w-full sm:max-w-sm">
+
+                    <a href="#" className="-m-1.5 p-1.5">
+                      <h1 className="text-5xl font-bold tracking-tight text-gray-900" style={{ textAlign: "center" }}>migrant.</h1>
+                      <p className="text-2xltracking-tight text-gray-500" style={{ textAlign: "center", marginLeft: "65px", marginTop: "-11px", marginBottom: "-2px" }}>MINGLE</p>
+                    </a>
+                    <h2 className="mt-10 text-center text-2xl font-bold leading-9 tracking-tight text-gray-900" style={{ lineHeight: "0.01" }}>Sign in to your account</h2>
+                  </div>
+
+                  <div className="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]" aria-hidden="true">
+                    <div className="relative right-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#9775FA] to-[#693FE3] opacity-30 sm:right-[calc(50%-30rem)] sm:w-[72.1875rem]" ></div>
+                  </div>
+
+                  <div className="mt-10 sm:mx-auto sm:w-full sm:max-w-sm">
+                    <form className="space-y-6" action="#" method="POST">
+                      <div>
+                        <label htmlFor="exampleFormControlInput2" className="block text-sm font-medium leading-6 text-gray-900">Email address</label>
+                        <div className="mt-2">
+                          <input id="email" name="email" type="email" autocomplete="email" required className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" />
+                        </div>
+                      </div>
+
+                      <div>
+                        <div className="flex items-center justify-between">
+                          <label htmlFor="exampleFormControlInput22" className="block text-sm font-medium leading-6 text-gray-900">Password</label>
+                          <div className="text-sm">
+                            <a href="#" className="font-semibold text-indigo-600 hover:text-indigo-500">Forgot password?</a>
+                          </div>
+                        </div>
+                        <div className="mt-2">
+                          <input id="password" name="password" type="password" autocomplete="current-password" required className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" />
+                        </div>
+                      </div>
+
+                      <div>
+                        <div className="text-center lg:text-center">
+                          <Link href="/dashboard">
+                            <button
+                              type="button"
+                              className="inline-block rounded bg-primary px-7 pb-2.5 pt-3 text-base font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-primary-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] dark:shadow-[0_4px_9px_-4px_rgba(59,113,202,0.5)] dark:hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)]"
+                              data-te-ripple-init
+                              data-te-ripple-color="light"
+                              style={{ width: "100%", marginTop: "15px" }}
+                            >
+                              Login
+                            </button>
+                          </Link>
+                        </div>
+
+                      </div>
+                    </form>
+
+                    <p className="mt-10 text-center text-sm text-gray-500">
+                      Not a member?
+                      <Link
+                        href="/signup"
+                        className="text-[#512EB7] ml-2 transition duration-150 ease-in-out hover:text-danger-600 focus:text-danger-600 active:text-danger-700"
+                      >
+                        Register
+                      </Link>
+                    </p>
+                  </div>
                 </div>
 
               </div>
