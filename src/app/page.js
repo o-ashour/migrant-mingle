@@ -69,7 +69,7 @@ export default function Home() {
                       Don't have an account?
                       <Link
                         href="/signup"
-                        className="text-danger transition duration-150 ease-in-out hover:text-danger-600 focus:text-danger-600 active:text-danger-700"
+                        className="text-danger ml-1 transition duration-150 ease-in-out hover:text-danger-600 focus:text-danger-600 active:text-danger-700"
                       >
                         Register
                       </Link>
