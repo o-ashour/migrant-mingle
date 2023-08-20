@@ -1,7 +1,7 @@
 import './globals.css'
-import { Quicksand } from 'next/font/google'
+import { Poppins } from 'next/font/google'
 
-export const text = Quicksand({
+export const text = Poppins({
   subsets: ['latin'],
   weight: ['400', '700'],
 });
