@@ -126,15 +126,7 @@ export default function Home() {
 
                 <div className="group relative" style={{ marginLeft: "-267px", width: "193%" }}>
 
-                  <img src="https://images.unsplash.com/photo-1522543558187-768b6df7c25c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80" alt="" className="absolute inset-0 -z-10 h-full w-full object-cover object-right md:object-center" />
-                  {/* <div className="relative h-80 w-full overflow-hidden rounded-lg bg-white sm:aspect-h-1 sm:aspect-w-2 lg:aspect-h-1 lg:aspect-w-1 sm:h-80">
-
-
-                    <img src="https://images.unsplash.com/photo-1522543558187-768b6df7c25c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80" alt="Community Bonding Image" className="h-full w-full object-cover object-center" />
-
-                    https://www.bestofforever.com/wp-content/uploads/Quotes-About-Bonding-Moments-With-Friends-Twitter-1.jpg
-
-                  </div> */}
+                  <img src="https://images.unsplash.com/photo-1522543558187-768b6df7c25c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80" alt="" className="absolute inset-0 -z-10 h-full w-full object-cover object-right md:object-center" style={{borderRadius:"10px"}}/>
 
                   <div className="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]" aria-hidden="true">
                     <div className="relative right-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#9775FA] to-[#693FE3] opacity-30 sm:right-[calc(50%-30rem)] sm:w-[72.1875rem]" ></div>
@@ -144,7 +136,7 @@ export default function Home() {
 
                     <div className="flex min-h-full flex-col justify-center px-20 py-40 lg:px-8" style={{
                       textAlign: "center", backgroundColor: "#9775fa70",
-                      boxShadow: "0px 0px 7px 0px #FFC700",
+                      boxShadow: "0px 0px 4px 0px #FFC700",
                       borderRadius: "10px"
                     }}>
 
@@ -245,8 +237,7 @@ export default function Home() {
           <nav className="flex items-center justify-between p-6 lg:px-8 mx-auto max-w-7xl px-4 py-7 sm:px-6 lg:px-8" aria-label="Global">
             <div className="flex lg:flex-1">
               <a href="#" className="-m-1.5 p-1.5">
-                {/* <span className="sr-only">Migrant. Mingle</span>
-                <img className="h-8 w-auto" src="assets/LogoDesign1/coconotLightWhiteBgd.jpg" width="200" alt="Migrant.Mingle" /> */}
+                
                 <h1 className="text-3xl font-bold tracking-tight text-gray-900">migrant.</h1>
                 <p className="tracking-tight text-gray-500" style={{ marginLeft: "65px", marginTop: "-11px" }}>MINGLE</p>
 
