@@ -1,15 +1,16 @@
 import { UserCircleIcon } from '@heroicons/react/24/solid';
 import Link from 'next/link';
+import SaveBtn from '../../components/SaveBtn';
 
-export default function Example() {
+export default function SignUp() {
   return (
     <main>
       <div className="mx-auto max-w-7xl py-6 sm:px-6 lg:px-8">
         <form>
           <div className="space-y-12">
             <div className="border-b border-gray-900/10 pb-12">
-              <h2 className="text-base font-semibold leading-7 text-gray-900">Personal Information</h2>
-              <p className="mt-1 text-sm leading-6 text-gray-600">Enter a unique username and password.</p>
+              <h2 className="text-xl font-semibold leading-7 text-gray-900">Personal Information</h2>
+              <p className="mt-1 text-lg leading-6 text-gray-600">Enter a unique username and password.</p>
     
 
               <div className="mt-10 grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6">
@@ -222,12 +223,7 @@ export default function Example() {
             </Link>
             
             <Link href='/dashboard'>
-              <button
-                type="submit"
-                className="rounded-md bg-indigo-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
-              >
-                Save
-              </button>
+              <SaveBtn />
             </Link>            
           </div>
         </form>
