@@ -1,6 +1,3 @@
-# Welcome to Migrant Mingle
-> A digital gathering place where first-generation immigrant students can mingle, exchange family recipes, get in touch with others, and update their statuses to maintain a sense of security.
-
 ## About Migrant Mingle
 > A digital gathering place where first-generation low-income immigrant students can mingle, exchange family recipes, get in touch with others, and update their statuses to maintain a sense of security in order to thrive in their new study environments.
 
@@ -56,7 +53,26 @@ _Embrace your uniqueness. Celebrate your identity. Connect, share, and thrive at
      voices within the community.
 
 ## How we built it
-We built it using following to
+We built it with love and consideration using following tools-
+
+1. Frontend
+- next.js
+- tailwindCss
+- html
+- css
+- javascript
+
+2. Backend
+- Firestore
+
+3. Database
+- Firebase
+
+4. Deployment
+- vercel 
+
+5. Version Control and Code hosting
+- GitHub
 
 ## Challenges I ran into
 to be determined
@@ -69,7 +85,6 @@ to be determined
 
 ## What's next for Collaborative Study Groups App - Empower Hack
 to be determined
-
 ## PRIORITY - n
 ### Additional Feautres-
 - [ ] Login Sign up Page (Oauth Implementation)
