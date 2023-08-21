@@ -1,8 +1,47 @@
+'use client'
+
 import { UserCircleIcon } from "@heroicons/react/24/solid";
-import Link from "next/link";
-import SaveBtn from "../../components/SaveBtn";
+import { useState } from "react";
+import { getFirestoreInstance } from "@/firebase/clientApp";
+import { useRouter } from "next/navigation";
+import { collection, addDoc } from "firebase/firestore";
 
 export default function SignUp() {
+  const [userInput, setUserInput] = useState({email: '', password: '', username: ''});
+  const router = useRouter();
+  
+  const handleEmailChange = (e) => {
+    setUserInput(prevVal => {return {...prevVal, email: e.target.value}})
+  }
+
+  const handlePasswordChange = (e) => {
+    setUserInput(prevVal => { return { ...prevVal, password: e.target.value } })
+  }
+
+  const handleUsernameChange = (e) => {
+    setUserInput(prevVal => { return { ...prevVal, username: e.target.value } })
+  }
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    const firestore = getFirestoreInstance();
+
+    try {
+      const docRef = await addDoc(collection(firestore, "users"), {
+        username: userInput.username,
+        password: userInput.password,
+        email: userInput.email,
+      });
+      console.log("Document written with ID: ", docRef.id);
+      alert("You've been registered! Press OK to go to your dashboard.")
+      router.push('/dashboard');
+    } catch (e) {
+      alert('Sorry, Something went wrong. Try again or contact the developers.')
+      console.error("Error adding document: ", e);
+    }
+  }
+
   return (
     <main>
       <div className="max-h-screen p-6 flex items-center justify-center mt-10">
@@ -16,11 +55,12 @@ export default function SignUp() {
               Journey!
             </p>
             <div className="bg-[#D2C6F7] rounded shadow-lg p-4 px-4 md:p-8 mb-6">
-              <div className="grid gap-4 gap-y-2 text-sm grid-cols-1 lg:grid-cols-3">
+              <form onSubmit={handleSubmit} className="grid gap-4 gap-y-2 text-sm grid-cols-1 lg:grid-cols-3">
                 <div className="mb-5">
                   <div className="md:col-span-2 mb-6">
                     <label htmlFor="username">User Name</label>
                     <input
+                      onChange={handleUsernameChange}
                       type="text"
                       name="username"
                       id="username"
@@ -28,17 +68,20 @@ export default function SignUp() {
                       defaultValue=""
                       placeholder="Janesmith"
                       autoComplete="username"
+                      required
                     />
                   </div>
                   <div className="md:col-span-2 mb-6">
                     <label htmlFor="password">Password</label>
                     <input
+                      onChange={handlePasswordChange}
                       type="password"
                       name="password"
                       id="password"
                       className="h-10 border mt-1 rounded px-4 w-full bg-gray-50"
                       defaultValue=""
                       placeholder="Create a password"
+                      required
                     />
                   </div>
                   <div className="col-span-full">
@@ -81,12 +124,14 @@ export default function SignUp() {
                     <div className="md:col-span-5 mb-4" >
                       <label htmlFor="email">Email Address</label>
                       <input
+                        onChange={handleEmailChange}
                         type="email"
                         name="email"
                         id="email"
                         className="h-10 border mt-1 rounded px-4 w-full bg-gray-50"
                         placeholder="email@domain.com"
                         autoComplete="email"
+                        required
                       />
                     </div>
                     <div className="md:col-span-5 mb-4">
@@ -100,21 +145,19 @@ export default function SignUp() {
                     </div>
                     <div className="md:col-span-5 text-right">
                     <div className="inline-flex items-end">
-                      <Link href="/dashboard">
-                        <button
-                          type="button"
-                          className="bg-primary text-white font-bold py-2 px-4 rounded"
-                          data-te-ripple-init
-                          data-te-ripple-color="light"
-                        >
-                          Register
-                        </button>
-                      </Link>
+                      <button
+                        type="submit"
+                        className="bg-primary text-white font-bold py-2 px-4 rounded"
+                        data-te-ripple-init
+                        data-te-ripple-color="light"
+                      >
+                        Register
+                      </button>
                     </div>
                   </div>
                   </div>
                 </div>
-              </div>
+              </form>
             </div>
           </div>
         </div>
