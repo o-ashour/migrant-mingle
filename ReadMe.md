@@ -96,21 +96,22 @@ _**Embrace your uniqueness. Celebrate your identity. Connect, share, and thrive 
 ## How we built it
 Leveraging an arsenal of cutting-edge tools, we meticulously orchestrated the construction of this visionary digital realm. At the core of our architectural masterpiece lay the triumvirate of HTML, CSS, and JavaScript, synergizing to craft an immersive user interface. Harnessing the dynamic capabilities of Next.js, we forged a robust foundation, seamlessly integrating its server-side rendering prowess. Tailwind CSS emerged as our design opus, elegantly sculpting the visual narrative through its utility-driven approach. As the intricate threads of functionality intertwined, Firestore and Firebase orchestrated a symphony of data storage and real-time interactions, underpinned by OAuth for secure authentication. Our development cadence was choreographed with the precision of Git and GitHub, bestowing version control mastery. The crescendo of our endeavor resonated with the unveiling on Vercel, a seamless culmination of deployment artistry. Thus, through the orchestration of this technological ballet, we wove a narrative where innovation converges with design excellence. Besides we built Migrant Mingle with love and consideration for the first generation low income students and their struggles. Here is the summary of tools we used-
 1. **Frontend**
-   + next.js
-   + tailwindCss
-   + html
-   + css
-   + javascript
+   + Next.js
+   + Tailwind CSS
+   + HTML
+   + CSS
+   + JavaScript
 
 ------------
 
 2. **Backend**
-   + Firestore
+   + Firebase
+   + Next.js
 
 ------------
 
 3. **Database** 
-   + Firebase
+   + Firestore
 
 ------------
 
