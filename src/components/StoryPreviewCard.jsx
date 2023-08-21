@@ -9,9 +9,10 @@ const StoryPreviewCard = ({ id, title, subtitle, story }) => {
   });
 
   return (
-    <article className="flex max-w-xl flex-col items-start justify-between" style={{ border: "0px solid #D2C6F7", padding: "40px", borderRadius: "10px", boxShadow: "1px 4px 13px 2px #D2C6F7", marginTop: "30px" }}>
+    // B2A9EC
+    <article className="bg-[#EDEDED] flex max-w-xl flex-col items-start justify-between" style={{ border: "0px solid #D2C6F7", padding: "40px", borderRadius: "10px", boxShadow: "1px 4px 13px 3px #BE98EE", marginTop: "30px" }}> 
       <div className="group relative">
-        <h3 className="mt-3 text-lg font-semibold leading-6 text-gray-900 group-hover:text-gra y-600">
+        <h3 className="mt-3 text-lg font-semibold leading-6 text-gray-900 group-hover:text-gray-600">
           <Link href={`/story/${id}`}>
             <span className="absolute inset-0"></span>
             {title}
