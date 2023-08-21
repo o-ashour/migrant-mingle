@@ -8,7 +8,7 @@ export default function Dashboard() {
         
         <div className="mx-auto max-w-7xl px-4 py-7 sm:px-6 lg:px-8">
         <div className="flex lg:flex-1">
-          <a href="#" className="-m-1.5 p-1.5">
+          <a href="/" className="-m-1.5 p-1.5">
 
             <h1 className="text-3xl font-bold tracking-tight text-gray-900">migrant.</h1>
             <p className="tracking-tight text-gray-500" style={{ marginLeft: "65px", marginTop: "-11px" }}>MINGLE</p>
