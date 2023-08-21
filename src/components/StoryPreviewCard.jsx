@@ -1,8 +1,13 @@
 "use client"
 
 import Link from "next/link";
+import _ from 'lodash';
 
 const StoryPreviewCard = ({ id, title, subtitle, story }) => {
+  const truncatedStory = _.truncate(story, {
+    'length': 100,
+  });
+
   return (
     <article className="flex max-w-xl flex-col items-start justify-between" style={{ border: "0px solid #D2C6F7", padding: "40px", borderRadius: "10px", boxShadow: "1px 4px 13px 2px #D2C6F7", marginTop: "30px" }}>
       <div className="flex items-center gap-x-4 text-xs">
@@ -21,7 +26,7 @@ const StoryPreviewCard = ({ id, title, subtitle, story }) => {
           {subtitle}
         </h4>
         <p className="mt-5 line-clamp-3 text-sm leading-6 text-gray-600">     
-          {story}
+          {truncatedStory}
         </p>
       </div>
       <div className="relative mt-8 flex items-center gap-x-4">
