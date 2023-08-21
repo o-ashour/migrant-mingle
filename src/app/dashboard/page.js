@@ -1,3 +1,4 @@
+import StoriesPreview from "@/src/components/StoriesPreview"
 import Link from "next/link"
 
 export default function Dashboard() {
@@ -64,241 +65,20 @@ export default function Dashboard() {
                   View Stories
                 </button>
               </Link>
-            </div>
-            
-
+            </div>          
           </div>
-
-
-
         </div>
-{/*         
-         // ===========================================          
-        // VAISHALI CREATED DESIGN FOR THE POSTS/STORIES
-        // =========================================== */}
         
         <div className="bg-gray-100" id="BODY">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div className="mx-auto max-w-2xl py-16 sm:py-24 lg:max-w-none lg:py-32">
-
               <h1 className="text-5xl font-bold text-gray-900" style={{ textAlign: "center" }}>Stories around you</h1>
               <div className="text-xl text-gray-400" style={{ textAlign: "center", marginTop: "20px" }}>Brought to you by your fellow immigrant buddies!</div>
-              <div className="mt-6 space-y-12 lg:grid lg:grid-cols-3 lg:gap-x-6 lg:space-y-0">
-
-                <div className="group relative" style={{ border: "0px solid #D2C6F7", padding: "40px", borderRadius: "10px", boxShadow: "1px 4px 13px 2px #D2C6F7", marginTop: "30px" }}>
-                  <div className="relative h-80 w-full overflow-hidden rounded-lg bg-white sm:aspect-h-1 sm:aspect-w-2 lg:aspect-h-1 lg:aspect-w-1 group-hover:opacity-75 sm:h-64">
-                    <img src="https://tailwindui.com/img/ecommerce-images/home-page-02-edition-01.jpg" alt="Desk with leather desk pad, walnut desk organizer, wireless keyboard and mouse, and porcelain mug." className="h-full w-full object-cover object-center" />
-                  </div>
-                  <h3 className="mt-6 text-sm text-gray-500">
-                    <a href="#">
-                      <span className="absolute inset-0"></span>
-                      Desk and Office
-                    </a>
-                  </h3>
-                  <p className="text-base font-semibold text-gray-900">Work from home accessories</p>
-                </div>
-
-                <div className="group relative" style={{ border: "0px solid #D2C6F7", padding: "40px", borderRadius: "10px", boxShadow: "1px 4px 13px 2px #D2C6F7", marginTop: "30px" }}>
-                  <div className="relative h-80 w-full overflow-hidden rounded-lg bg-white sm:aspect-h-1 sm:aspect-w-2 lg:aspect-h-1 lg:aspect-w-1 group-hover:opacity-75 sm:h-64">
-                    <img src="https://tailwindui.com/img/ecommerce-images/home-page-02-edition-02.jpg" alt="Wood table with porcelain mug, leather journal, brass pen, leather key ring, and a houseplant." className="h-full w-full object-cover object-center" />
-                  </div>
-                  <h3 className="mt-6 text-sm text-gray-500">
-                    <a href="#">
-                      <span className="absolute inset-0"></span>
-                      Self-Improvement
-                    </a>
-                  </h3>
-                  <p className="text-base font-semibold text-gray-900">Journals and note-taking</p>
-                </div>
-
-                <div className="group relative" style={{ border: "0px solid #D2C6F7", padding: "40px", borderRadius: "10px", boxShadow: "1px 4px 13px 2px #D2C6F7", marginTop: "30px" }}>
-                  <div className="relative h-80 w-full overflow-hidden rounded-lg bg-white sm:aspect-h-1 sm:aspect-w-2 lg:aspect-h-1 lg:aspect-w-1 group-hover:opacity-75 sm:h-64">
-                    <img src="https://tailwindui.com/img/ecommerce-images/home-page-02-edition-03.jpg" alt="Collection of four insulated travel bottles on wooden shelf." className="h-full w-full object-cover object-center" />
-                  </div>
-                  <h3 className="mt-6 text-sm text-gray-500">
-                    <a href="#">
-                      <span className="absolute inset-0"></span>
-                      Travel
-                    </a>
-                  </h3>
-                  <p className="text-base font-semibold text-gray-900">Daily commute essentials</p>
-                </div>
-
-
-                <article className="flex max-w-xl flex-col items-start justify-between" style={{ border: "0px solid #D2C6F7", padding: "40px", borderRadius: "10px", boxShadow: "1px 4px 13px 2px #D2C6F7", marginTop: "30px" }}>
-                  <div className="flex items-center gap-x-4 text-xs">
-                    <time datetime="2020-03-16" className="text-gray-500">Mar 16, 2020</time>
-                    <a href="#" className="relative z-10 rounded-full bg-gray-50 px-3 py-1.5 font-medium text-gray-600 hover:bg-gray-100">Marketing</a>
-                  </div>
-                  <div className="group relative">
-                    <h3 className="mt-3 text-lg font-semibold leading-6 text-gray-900 group-hover:text-gray-600">
-                      <a href="#">
-                        <span className="absolute inset-0"></span>
-                        Boost your conversion rate
-                      </a>
-                    </h3>
-                    <p className="mt-5 line-clamp-3 text-sm leading-6 text-gray-600">Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.</p>
-                  </div>
-                  <div className="relative mt-8 flex items-center gap-x-4">
-                    <img src="https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="" className="h-10 w-10 rounded-full bg-gray-50" />
-                    <div className="text-sm leading-6">
-                      <p className="font-semibold text-gray-900">
-                        <a href="#">
-                          <span className="absolute inset-0"></span>
-                          Michael Foster
-                        </a>
-                      </p>
-                      <p className="text-gray-600">Co-Founder / CTO</p>
-                    </div>
-                  </div>
-                </article>
-
-                <article className="flex max-w-xl flex-col items-start justify-between" style={{ border: "0px solid #D2C6F7", padding: "40px", borderRadius: "10px", boxShadow: "1px 4px 13px 2px #D2C6F7", marginTop: "30px" }}>
-                  <div className="flex items-center gap-x-4 text-xs">
-                    <time datetime="2020-03-16" className="text-gray-500">Mar 16, 2020</time>
-                    <a href="#" className="relative z-10 rounded-full bg-gray-50 px-3 py-1.5 font-medium text-gray-600 hover:bg-gray-100">Marketing</a>
-                  </div>
-                  <div className="group relative">
-                    <h3 className="mt-3 text-lg font-semibold leading-6 text-gray-900 group-hover:text-gray-600">
-                      <a href="#">
-                        <span className="absolute inset-0"></span>
-                        Boost your conversion rate
-                      </a>
-                    </h3>
-                    <p className="mt-5 line-clamp-3 text-sm leading-6 text-gray-600">Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.</p>
-                  </div>
-                  <div className="relative mt-8 flex items-center gap-x-4">
-                    <img src="https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="" className="h-10 w-10 rounded-full bg-gray-50" />
-                    <div className="text-sm leading-6">
-                      <p className="font-semibold text-gray-900">
-                        <a href="#">
-                          <span className="absolute inset-0"></span>
-                          Michael Foster
-                        </a>
-                      </p>
-                      <p className="text-gray-600">Co-Founder / CTO</p>
-                    </div>
-                  </div>
-                </article>
-
-                <article className="flex max-w-xl flex-col items-start justify-between" style={{ border: "0px solid #D2C6F7", padding: "40px", borderRadius: "10px", boxShadow: "1px 4px 13px 2px #D2C6F7", marginTop: "30px" }}>
-                  <div className="flex items-center gap-x-4 text-xs">
-                    <time datetime="2020-03-16" className="text-gray-500">Mar 16, 2020</time>
-                    <a href="#" className="relative z-10 rounded-full bg-gray-50 px-3 py-1.5 font-medium text-gray-600 hover:bg-gray-100">Marketing</a>
-                  </div>
-                  <div className="group relative">
-                    <h3 className="mt-3 text-lg font-semibold leading-6 text-gray-900 group-hover:text-gray-600">
-                      <a href="#">
-                        <span className="absolute inset-0"></span>
-                        Boost your conversion rate
-                      </a>
-                    </h3>
-                    <p className="mt-5 line-clamp-3 text-sm leading-6 text-gray-600">Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.</p>
-                  </div>
-                  <div className="relative mt-8 flex items-center gap-x-4">
-                    <img src="https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="" className="h-10 w-10 rounded-full bg-gray-50" />
-                    <div className="text-sm leading-6">
-                      <p className="font-semibold text-gray-900">
-                        <a href="#">
-                          <span className="absolute inset-0"></span>
-                          Michael Foster
-                        </a>
-                      </p>
-                      <p className="text-gray-600">Co-Founder / CTO</p>
-                    </div>
-                  </div>
-                </article>
-
-                <article className="flex max-w-xl flex-col items-start justify-between" style={{ border: "0px solid #D2C6F7", padding: "40px", borderRadius: "10px", boxShadow: "1px 4px 13px 2px #D2C6F7", marginTop: "30px" }}>
-                  <div className="flex items-center gap-x-4 text-xs">
-                    <time datetime="2020-03-16" className="text-gray-500">Mar 16, 2020</time>
-                    <a href="#" className="relative z-10 rounded-full bg-gray-50 px-3 py-1.5 font-medium text-gray-600 hover:bg-gray-100">Marketing</a>
-                  </div>
-                  <div className="group relative">
-                    <h3 className="mt-3 text-lg font-semibold leading-6 text-gray-900 group-hover:text-gray-600">
-                      <a href="#">
-                        <span className="absolute inset-0"></span>
-                        Boost your conversion rate
-                      </a>
-                    </h3>
-                    <p className="mt-5 line-clamp-3 text-sm leading-6 text-gray-600">Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.</p>
-                  </div>
-                  <div className="relative mt-8 flex items-center gap-x-4">
-                    <img src="https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="" className="h-10 w-10 rounded-full bg-gray-50" />
-                    <div className="text-sm leading-6">
-                      <p className="font-semibold text-gray-900">
-                        <a href="#">
-                          <span className="absolute inset-0"></span>
-                          Michael Foster
-                        </a>
-                      </p>
-                      <p className="text-gray-600">Co-Founder / CTO</p>
-                    </div>
-                  </div>
-                </article>
-
-              </div>
+                <StoriesPreview />
             </div>
           </div>
         </div>
-
       </main>
-
-    </div>
-
-  )
-}
-
-// ===========================================
-// ASH'S LOGIC FOR POSTS/STORIES
-// ===========================================
-const posts = [
-  {
-    id: 1,
-    title: 'A Great Story',
-    subtitle: 'A story of great feats and other super cool things.',
-    href: '#',
-    description:
-      'Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.',
-    name: 'Mr. Storyteller'
-  },
-  // More posts...
-]
-
-function Stories() {
-  return (
-    <div className="bg-white py-24 sm:py-32">
-      <div className="mx-auto max-w-7xl px-6 lg:px-8">
-        <div className="mx-auto max-w-2xl lg:mx-0">
-          <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Community Shares</h2>
-          <p className="mt-2 text-lg leading-8 text-gray-600">
-            Learn about yourself and others from reading and sharing stories.
-          </p>
-        </div>
-        <div className="mx-auto mt-10 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 border-t border-gray-200 pt-10 sm:mt-16 sm:pt-16 lg:mx-0 lg:max-w-none lg:grid-cols-3">
-          {posts.map((post) => (
-            <article key={post.id} className="flex max-w-xl flex-col items-start justify-between">
-              <div className="group relative">
-                <h3 className="mt-3 text-lg font-semibold leading-6 text-gray-900 group-hover:text-gray-600">
-                  <a href={post.href}>
-                    <span className="absolute inset-0" />
-                    {post.title}
-                  </a>
-                </h3>
-                <p className="mt-5 line-clamp-3 text-sm leading-6 text-gray-600">{post.description}</p>
-              </div>
-              <div className="relative mt-8 flex items-center gap-x-4">
-                <div className="text-sm leading-6">
-                  <p className="font-semibold text-gray-900">
-                    <span className="absolute inset-0" />
-                    {post.name}
-                  </p>
-                </div>
-              </div>
-            </article>
-          ))}
-        </div>
-      </div>
     </div>
   )
 }
