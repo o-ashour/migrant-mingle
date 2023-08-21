@@ -5,7 +5,7 @@ import SaveBtn from "../../components/SaveBtn";
 export default function SignUp() {
   return (
     <main>
-      <div className="min-h-screen p-6 bg-gray-100 flex items-center justify-center mt-10">
+      <div className="max-h-screen p-6 flex items-center justify-center mt-10">
         <div className="container max-w-screen-lg mx-auto">
           <div style={{ marginTop: "50px" , textAlign:"center"}}>
             <h2 className="font-semibold text-xl text-gray-600">
@@ -15,7 +15,7 @@ export default function SignUp() {
               Your Experience Matters: Join the Conversation and Share Your
               Journey!
             </p>
-            <div className="bg-white rounded shadow-lg p-4 px-4 md:p-8 mb-6">
+            <div className="bg-[#D2C6F7] rounded shadow-lg p-4 px-4 md:p-8 mb-6">
               <div className="grid gap-4 gap-y-2 text-sm grid-cols-1 lg:grid-cols-3">
                 <div className="mb-5">
                   <div className="md:col-span-2 mb-6">

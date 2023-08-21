@@ -3,12 +3,18 @@ import Link from "next/link"
 
 export default function Dashboard() {
   return (
-    <div className="min-h-full">
+    <div className=" bg-[#D2C6F7] min-h-full">
       <header className="bg-white shadow">
+        
         <div className="mx-auto max-w-7xl px-4 py-7 sm:px-6 lg:px-8">
-          <h1 className="text-3xl font-bold tracking-tight text-gray-900">migrant.</h1>
-          <p className="tracking-tight text-gray-400" style={{ marginLeft: "65px", marginTop: "-11px" }}>MINGLE</p>
+        <div className="flex lg:flex-1">
+          <a href="#" className="-m-1.5 p-1.5">
 
+            <h1 className="text-3xl font-bold tracking-tight text-gray-900">migrant.</h1>
+            <p className="tracking-tight text-gray-500" style={{ marginLeft: "65px", marginTop: "-11px" }}>MINGLE</p>
+
+          </a>
+        </div>
         </div>
       </header>
       <main>
@@ -55,7 +61,7 @@ export default function Dashboard() {
                 </button>
               </Link>
 
-              <Link href="#BODY" style={{marginLeft:"20px"}}>
+              <Link href="#BODY" style={{ marginLeft: "20px" }}>
                 <button
                   type="button"
                   className="inline-block rounded bg-primary px-7 pb-2.5 pt-3 text-base font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-primary-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] dark:shadow-[0_4px_9px_-4px_rgba(59,113,202,0.5)] dark:hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)]"
@@ -65,16 +71,16 @@ export default function Dashboard() {
                   View Stories
                 </button>
               </Link>
-            </div>          
+            </div>
           </div>
         </div>
-        
-        <div className="bg-gray-100" id="BODY">
+
+        <div className="bg-[#D2C6F7]" id="BODY">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div className="mx-auto max-w-2xl py-16 sm:py-24 lg:max-w-none lg:py-32">
               <h1 className="text-5xl font-bold text-gray-900" style={{ textAlign: "center" }}>Stories around you</h1>
               <div className="text-xl text-gray-400" style={{ textAlign: "center", marginTop: "20px" }}>Brought to you by your fellow immigrant buddies!</div>
-                <StoriesPreview />
+              <StoriesPreview className="bg-[#D2C6F7]" />
             </div>
           </div>
         </div>
