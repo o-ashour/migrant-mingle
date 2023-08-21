@@ -3,7 +3,7 @@ import Link from "next/link"
 
 export default function Dashboard() {
   return (
-    <div className=" bg-[#D2C6F7] min-h-full">
+    <div className=" bg-[#B2A9EC] min-h-full">
       <header className="bg-white shadow">
         
         <div className="mx-auto max-w-7xl px-4 py-7 sm:px-6 lg:px-8">
@@ -75,12 +75,12 @@ export default function Dashboard() {
           </div>
         </div>
 
-        <div className="bg-[#D2C6F7]" id="BODY">
+        <div className="bg-[#B2A9EC]" id="BODY">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div className="mx-auto max-w-2xl py-16 sm:py-24 lg:max-w-none lg:py-32">
               <h1 className="text-5xl font-bold text-gray-900" style={{ textAlign: "center" }}>Stories around you</h1>
-              <div className="text-xl text-gray-400" style={{ textAlign: "center", marginTop: "20px" }}>Brought to you by your fellow immigrant buddies!</div>
-              <StoriesPreview className="bg-[#D2C6F7]" />
+              <div className="text-xl text-gray-300" style={{ textAlign: "center", marginTop: "20px" }}>Brought to you by your fellow immigrant buddies!</div>
+              <StoriesPreview className="bg-[#B2A9EC]" />
             </div>
           </div>
         </div>
