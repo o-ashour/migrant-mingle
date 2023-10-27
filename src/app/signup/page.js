@@ -5,6 +5,8 @@ import { useState } from "react";
 import { getFirestoreInstance } from "@/firebase/clientApp";
 import { useRouter } from "next/navigation";
 import { collection, addDoc } from "firebase/firestore";
+import { getAuthInstance } from "@/firebase/clientApp";
+import { createUserWithEmailAndPassword } from "firebase/auth";
 
 export default function SignUp() {
   const [userInput, setUserInput] = useState({email: '', password: '', username: ''});
@@ -24,22 +26,18 @@ export default function SignUp() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-
-    const firestore = getFirestoreInstance();
-
-    try {
-      const docRef = await addDoc(collection(firestore, "users"), {
-        username: userInput.username,
-        password: userInput.password,
-        email: userInput.email,
+    const auth = getAuthInstance();
+    createUserWithEmailAndPassword(auth, userInput.email, userInput.password)
+      .then((userCredential) => {
+        // Signed in 
+        const user = userCredential.user;
+        console.log(user)
+      })
+      .catch((error) => {
+        const errorCode = error.code;
+        const errorMessage = error.message;
+        console.error(`Status: ${errorCode}, Error: ${errorMessage}`)
       });
-      console.log("Document written with ID: ", docRef.id);
-      alert("You've been registered! Press OK to go to your dashboard.")
-      router.push('/dashboard');
-    } catch (e) {
-      alert('Sorry, Something went wrong. Try again or contact the developers.')
-      console.error("Error adding document: ", e);
-    }
   }
 
   return (

@@ -1,6 +1,47 @@
+'use client'
+
 import Link from "next/link";
+import { useState } from "react";
+import { signInWithEmailAndPassword } from "firebase/auth";
+import { getAuthInstance } from "@/firebase/clientApp";
+import { useRouter } from "next/navigation";
+
 
 export default function Home() {
+  const [userInput, setUserInput] = useState({
+    email: '', 
+    password: '',
+  });
+  const router = useRouter();
+  const handleUserInputChange = (e) => {
+    if (e.target.id === 'email') {
+      setUserInput(prevVal => {
+        return {...prevVal, email: e.target.value}
+      })
+    } else if (e.target.id === 'password') {
+      setUserInput(prevVal => {
+        return { ...prevVal, password: e.target.value }
+      })
+    }
+  }
+
+    const handleSubmit = (e) => {
+      e.preventDefault();
+      const auth = getAuthInstance();
+      signInWithEmailAndPassword(auth, userInput.email, userInput.password)
+        .then((userCredential) => {
+          // Signed in 
+          const user = userCredential.user;
+          console.log(user);
+          router.push('/dashboard')
+        })
+        .catch((error) => {
+          const errorCode = error.code;
+          const errorMessage = error.message;
+          console.error(`Error ${errorCode}: ${errorMessage}`)
+        });
+    }
+
   return (
     <main>
       {/* ============= */}
@@ -191,11 +232,17 @@ export default function Home() {
                   </div>
 
                   <div className="mt-10 sm:mx-auto sm:w-full sm:max-w-sm">
-                    <form className="space-y-6" action="#" method="POST">
+                    {/* sign in form */}
+                    <form 
+                      className="space-y-6" 
+                      action="#" 
+                      method="POST"
+                      onSubmit={handleSubmit}
+                    >
                       <div>
                         <label htmlFor="exampleFormControlInput2" className="block text-sm font-medium leading-6 text-gray-900">Email address</label>
                         <div className="mt-2">
-                          <input id="email" name="email" type="email" autocomplete="email" required className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" />
+                          <input id="email" name="email" type="email" autocomplete="email" required className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" onChange={handleUserInputChange} />
                         </div>
                       </div>
 
@@ -207,23 +254,21 @@ export default function Home() {
                           </div>
                         </div>
                         <div className="mt-2">
-                          <input id="password" name="password" type="password" autocomplete="current-password" required className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" />
+                          <input id="password" name="password" type="password" autocomplete="current-password" required className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" onChange={handleUserInputChange} />
                         </div>
                       </div>
 
                       <div>
                         <div className="bg-gradient-to-tr from-[#9775FA] to-[#D2C6F7] text-center lg:text-center">
-                          <Link href="/dashboard">
-                            <button
-                              type="button"
-                              className="inline-block rounded bg-primary px-7 pb-2.5 pt-3 text-base font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-primary-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] dark:shadow-[0_4px_9px_-4px_rgba(59,113,202,0.5)] dark:hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)]"
-                              data-te-ripple-init
-                              data-te-ripple-color="light"
-                              style={{ width: "100%", marginTop: "15px" }}
-                            >
-                              Login
-                            </button>
-                          </Link>
+                          <button
+                            type="submit"
+                            className="inline-block rounded bg-primary px-7 pb-2.5 pt-3 text-base font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-primary-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] dark:shadow-[0_4px_9px_-4px_rgba(59,113,202,0.5)] dark:hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)]"
+                            data-te-ripple-init
+                            data-te-ripple-color="light"
+                            style={{ width: "100%", marginTop: "15px" }}
+                          >
+                            Login
+                          </button>
                         </div>
 
                       </div>
@@ -630,6 +675,7 @@ export default function Home() {
           </nav>
 
 
+          {/* nav menu for smaller screen size */}
           {/* ==== RESPONSIVE DESIGN ===== */}
           {/* <!-- Mobile menu, show/hide based on menu open state. --> */}
           {/* <div className="lg:hidden" role="dialog" aria-modal="true"> */}
