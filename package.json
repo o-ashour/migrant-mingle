@@ -12,7 +12,7 @@
     "@heroicons/react": "^2.0.18",
     "autoprefixer": "10.4.15",
     "firebase": "^10.2.0",
-    "firebase-admin": "^11.10.1",
+    "firebase-admin": "^13.5.0",
     "lodash": "^4.17.21",
     "next": "^14.2.32",
     "postcss": "8.4.28",
